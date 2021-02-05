@@ -45,4 +45,4 @@ The matrix R_rect_00 is the 3x3 rectifying rotation to make image planes co-plan
  
  ![Lidar Top View after Filtering](/images/LiDAR%20data%20on%20image%20overlay_beforeFiltering_04.02.2021.png)
  
- ![Camera with Lidar data fused](/imgages/LiDAR data%20on%20image%20overlay_AddFilter_05.02.2021.png)
+ ![Camera with Lidar data fused](/imgages/LiDAR%20data%20on%20image%20overlay_AddFilter_05.02.2021.png)
