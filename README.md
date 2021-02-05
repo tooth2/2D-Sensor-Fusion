@@ -41,12 +41,3 @@ The matrix R_rect_00 is the 3x3 rectifying rotation to make image planes co-plan
 * too close to the road surface in negative z-direction.
 * showing a reflectivity close to zero, which might indicate low reliability.
  
- ```code
-     for(auto it=lidarPoints.begin(); it!=lidarPoints.end(); ++it) {
-
-        //set  maxX , maxY, minZ first 
-        if(it->x > maxX || it->x < 0.0 || abs(it->y) > maxY || it->z < minZ || it->r<0.01 )
-        {
-            continue; // skip to next point
-        }
- ```
