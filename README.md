@@ -37,14 +37,16 @@ The matrix R_rect_00 is the 3x3 rectifying rotation to make image planes co-plan
 * showing a reflectivity close to zero, which might indicate low reliability.
  
  ### Result 
- Original to Gray Image
+ Original to Gray Image looks like this: 
  ![gray image](/images/0000000000.png)
  
- Top view From Lidar 
+ According to lidar data, I can draw the radius from closest to farthest.
+ 
  ![Lidar Top View](/images/Top-View%20Perspective%20of%20LiDAR%20data_AddFilter2TopView_05.02.2021.png)
  
- ![Camera View before Filtering](/images/LiDAR%20data%20on%20image%20overlay_beforeFiltering_04.02.2021.png)
- 
+And then only containing obstacles in the front line looks like this:  
+
  ![Lidar after Filtering](/images/Top-View%20Perspective%20of%20LiDAR%20data_FilterCirclueFinal_05.02.2021.png)
  
+ Finally, after filtering unnecessary lidar points overlayed in the camera image, the final processed image looks like the closer, more red, the farther more green renderd vehicle detection image. 
  ![Camera with Lidar fused](/images/LiDAR%20data%20on%20image%20overlay_AddFilter_05.02.2021.png)
