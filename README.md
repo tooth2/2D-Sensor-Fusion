@@ -5,12 +5,7 @@ Sensor fusion based 2D Vehicle Detection by applying Camera and Lidar measuremen
 ## Overview of the KITTI sensor setup
 KITTI vehicle that was used to generate the data sequences is equipped with two forward-facing cameras, a roof-mounted Velodyne Lidar as well as an inertial measurement unit or IMU (which are not used in this project).
 For all datasets, calibration files with intrinsic and extrinsic parameters are available from the KITTI website. In the following, the content of the file "calib_velo_to_cam.txt“ is shown, which relates the Velodyne sensor and the left camera of the stereo rig (valid for the highway sequence we are using):
-The original KITTI camera images are stored in the following folders:
-  - 'image_00': left rectified grayscale image sequence
-  - 'image_01': right rectified grayscale image sequence
-  - 'image_02': left rectified color image sequence
-  - 'image_03': right rectified color image sequence
-Only left camera images are used in this project.
+Instead of original KITTI data, pre-processing data is stored in the data folder. 
 ```
 calib_time: 15-Mar-2012 11:37:16
 R: 7.533745e-03 -9.999714e-01 -6.166020e-04 1.480249e-02 7.280733e-04 -9.998902e-01 9.998621e-01 7.523790e-03 1.480755e-02
@@ -41,3 +36,13 @@ The matrix R_rect_00 is the 3x3 rectifying rotation to make image planes co-plan
 * too close to the road surface in negative z-direction.
 * showing a reflectivity close to zero, which might indicate low reliability.
  
+ ### Result 
+ Original to Gray Image
+ [gray image](/images/0000000000.png)
+ 
+ Top view From Lidar 
+ [Lidar Top View](/images/Top-View Perspective of LiDAR data_AddFilter2TopView_05.02.2021.png)
+ 
+ [Lidar Top View after Filtering](/images/LiDAR data on image overlay_beforeFiltering_04.02.2021.png)
+ 
+ [Camera with Lidar data fused](/imgages/LiDAR data on image overlay_AddFilter_05.02.2021.png)
